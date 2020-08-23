@@ -3,16 +3,13 @@
 # Primary Author: Disassembler <disassembler@dasm.cz>
 # Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
+# Secondary Tweaked Source: https://github.com/ChrisTitusTech/windows-10-scripts
 #
-#    If you're a power user looking to tweak your machinea, or doing larger roll-out.. 
-#    Use the @Disassembler0 script instead. It'll probably be more up-to-date than mine:
-#    https://github.com/Disassembler0/Win10-Initial-Setup-Script
-# 
 #    Note from author: Never run scripts without reading them & understanding what they do.
 #
 #	Addition: One command to rule them all, One command to find it, and One command to Run it! 
 #
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
+#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUfcc')"
 #
 #	Verathor Additions:
 #
@@ -23,18 +20,20 @@
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
 #
-##########
+##############################################################################################################################################################################################
 # Default preset
+
+
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
 
 	### External Program Setup
-	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+	"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"InstallAdobe",
 	"Install7Zip",
 	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+	#"InstallMediaPlayerClassic",
 
 	### Windows Apps
 	"DebloatAll",
@@ -90,9 +89,9 @@ $tweaks = @(
 	"DisableAutoplay",              # "EnableAutoplay",
 	"DisableAutorun",               # "EnableAutorun",
 	"DisableStorageSense",        # "EnableStorageSense",
-	"DisableDefragmentation",     # "EnableDefragmentation",
+	#"DisableDefragmentation",     # "EnableDefragmentation",
 	"DisableSuperfetch",          # "EnableSuperfetch",
-	"DisableIndexing",            # "EnableIndexing",
+	#"DisableIndexing",            # "EnableIndexing",
 	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
 	"DisableHibernation",		# "EnableHibernation",          # 
 	"EnableSleepButton",		# "DisableSleepButton",         
@@ -108,17 +107,17 @@ $tweaks = @(
 	"DisableStickyKeys",            # "EnableStickyKeys",
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
-	"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
-	#"HideTaskbarSearch",
+	#"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
+	"HideTaskbarSearch",
 	"ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",
 	"HideTaskView",                 # "ShowTaskView",
 	# "ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
-	# "HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
+	"HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
 	"ShowTrayIcons",                # "HideTrayIcons",
 	"DisableSearchAppInStore",      # "EnableSearchAppInStore",
 	"DisableNewAppPrompt",          # "EnableNewAppPrompt",
-	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
+	"SetControlPanelCategories",    # "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons", 
 	# "SetVisualFXPerformance",     # "SetVisualFXAppearance",
 	# "AddENKeyboard",              # "RemoveENKeyboard",
 	"EnableNumlock",             	# "DisableNumlock",
@@ -139,29 +138,29 @@ $tweaks = @(
 	# "HideDocumentsFromExplorer",  # "ShowDocumentsInExplorer",
 	# "HideDownloadsFromThisPC",      # "ShowDownloadsInThisPC",
 	# "HideDownloadsFromExplorer",  # "ShowDownloadsInExplorer",
-	"HideMusicFromThisPC",          # "ShowMusicInThisPC",
-	"HideMusicFromExplorer",      # "ShowMusicInExplorer",
+	#"HideMusicFromThisPC",          # "ShowMusicInThisPC",
+	#"HideMusicFromExplorer",      # "ShowMusicInExplorer",
 	# "HidePicturesFromThisPC",       # "ShowPicturesInThisPC",
 	# "HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
-	"HideVideosFromThisPC",         # "ShowVideosInThisPC",
-	"HideVideosFromExplorer",     # "ShowVideosInExplorer",
+	#"HideVideosFromThisPC",         # "ShowVideosInThisPC",
+	#"HideVideosFromExplorer",     # "ShowVideosInExplorer",
 	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
 	"Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",
 	# "DisableThumbnails",          # "EnableThumbnails",
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
-	"DisableOneDrive",              # "EnableOneDrive",
-	"UninstallOneDrive",            # "InstallOneDrive",
+	#"DisableOneDrive",              # "EnableOneDrive",
+	#"UninstallOneDrive",            # "InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	# "DisableXboxFeatures",          # "EnableXboxFeatures",
 	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
-	"UninstallInternetExplorer",  # "InstallInternetExplorer",
+	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",
+	#"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
-	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
+	#"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
@@ -182,15 +181,25 @@ $tweaks = @(
 	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
-	"WaitForKey"
-	"Restart"
+	#"WaitForKey"
+	#"Restart"
 )
 
-#########
-# Recommended Titus Programs
-#########
 
-Function InstallTitusProgs {
+
+
+
+
+##########################################
+# Recommended Verathor Programs
+##########################################
+
+
+
+
+
+
+Function InstallVerathorProgs {
 	Write-Output "Installing Chocolatey"
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 	choco install chocolatey-core.extension -y
@@ -226,9 +235,19 @@ Function InstallNotepadplusplus {
 #	choco install mpc-hc -y
 }
 
-##########
+
+
+
+
+
+######################################
 # Privacy Tweaks
-##########
+######################################
+
+
+
+
+
 
 # Disable Telemetry
 # Note: This tweak may cause Enterprise edition to stop receiving Windows updates.
@@ -573,9 +592,17 @@ Function EnableWAPPush {
 
 
 
-##########
+
+
+
+#####################################
 # Security Tweaks
-##########
+#####################################
+
+
+
+
+
 
 # Lower UAC level (disabling it completely would break apps)
 Function SetUACLow {
@@ -852,9 +879,21 @@ Function DisableMeltdownCompatFlag {
 
 
 
-##########
+
+
+
+
+
+##########################################
 # Service Tweaks
-##########
+##########################################
+
+
+
+
+
+
+
 
 # Disable offering of Malicious Software Removal Tool through Windows Update
 Function DisableUpdateMSRT {
@@ -1152,9 +1191,21 @@ Function EnableFastStartup {
 
 
 
-##########
+
+
+
+
+
+################################################
 # UI Tweaks
-##########
+################################################
+
+
+
+
+
+
+
 
 # Disable Action Center
 Function DisableActionCenter {
@@ -1874,9 +1925,21 @@ Function EnableThumbsDB {
 
 
 
-##########
+
+
+
+
+
+############################################
 # Application Tweaks
-##########
+############################################
+
+
+
+
+
+
+
 
 # Disable OneDrive
 Function DisableOneDrive {
@@ -2314,9 +2377,21 @@ Function AddFaxPrinter {
 
 
 
-##########
+
+
+
+
+
+############################################
 # Server specific Tweaks
-##########
+############################################
+
+
+
+
+
+
+
 
 # Hide Server Manager after login
 Function HideServerManagerOnLogin {
@@ -2410,9 +2485,21 @@ Function DisableAudio {
 
 
 
-##########
+
+
+
+
+
+##########################################
 # Unpinning
-##########
+##########################################
+
+
+
+
+
+
+
 
 # Unpin all Start Menu tiles - Note: This function has no counterpart. You have to pin the tiles back manually.
 Function UnpinStartMenuTiles {
@@ -2439,9 +2526,21 @@ Function UnpinTaskbarIcons {
 
 
 
-##########
+
+
+
+
+
+##################################################
 # Auxiliary Functions
-##########
+##################################################
+
+
+
+
+
+
+
 
 # Relaunch the script with administrator privileges
 Function RequireAdmin {
@@ -2463,9 +2562,21 @@ Function Restart {
 	Restart-Computer
 }
 
-###########
-# Titus Additions
-###########
+
+
+
+
+
+########################################
+# Verathor Additions
+########################################
+
+
+
+
+
+
+
 
 Function EnableDarkMode {
   Write-Output "Enabling Dark Mode"
@@ -2477,9 +2588,19 @@ Function DisableDarkMode {
 	Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme
 }
 
-##########
+
+
+
+
+
+#################################
 # Debloat Script Additions
-##########
+#################################
+
+
+
+
+
 
 Function Stop-EdgePDF {
     
@@ -2565,7 +2686,7 @@ Function DebloatAll {
         #Optional: Typically not removed but you can if you need to for some reason
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
-        #"*Microsoft.BingWeather*"
+        "*Microsoft.BingWeather*"
         #"*Microsoft.MSPaint*"
         #"*Microsoft.MicrosoftStickyNotes*"
         #"*Microsoft.Windows.Photos*"
@@ -2579,9 +2700,19 @@ Function DebloatAll {
     }
 }
 
-##########
+
+
+
+
+
+################################################
 # Parse parameters and apply tweaks
-##########
+################################################
+
+
+
+
+
 
 # Normalize path to preset file
 $preset = ""
