@@ -12,9 +12,9 @@
 #
 #	Addition: One command to rule them all, One command to find it, and One command to Run it! 
 #
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
+#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUfcc')"
 #
-#	Chris Titus Additions:
+#	Verathor Additions:
 #
 #	- Dark Mode
 #	- One Command to launch and run
@@ -23,14 +23,17 @@
 #	- Added Install Programs
 #	- Added Debloat Microsoft Store Apps
 #
-##########
+####################################################################################################
+
 # Default preset
+
+
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
   "CreateRestorePoint",
 	### External Program Setup
-	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+	"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
 	"InstallNotepadplusplus",
 
@@ -181,17 +184,22 @@ $tweaks = @(
 	### Auxiliary Functions ###
 )
 
-#########
-# Recommended Titus Programs
-#########
 
-Function InstallTitusProgs {
+
+################################
+# Recommended Verathor Programs
+################################
+
+
+
+
+Function InstallVerathorProgs {
 	Write-Output "Installing Chocolatey"
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 	choco install chocolatey-core.extension -y
 	Write-Output "Running O&O Shutup with Recommended Settings"
 	Import-Module BitsTransfer
-	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+	Start-BitsTransfer -Source "https://raw.githubusercontent.com/Verathor/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
@@ -221,9 +229,15 @@ Function InstallMediaPlayerClassic {
 	choco install mpc-hc -y
 }
 
-##########
+
+
+
+#################
 # Privacy Tweaks
-##########
+#################
+
+
+
 
 # Disable Telemetry
 # Note: This tweak may cause Enterprise edition to stop receiving Windows updates.
@@ -568,9 +582,14 @@ Function EnableWAPPush {
 
 
 
-##########
+
+
+##################
 # Security Tweaks
-##########
+##################
+
+
+
 
 # Lower UAC level (disabling it completely would break apps)
 Function SetUACLow {
@@ -847,9 +866,14 @@ Function DisableMeltdownCompatFlag {
 
 
 
-##########
+
+
+#################
 # Service Tweaks
-##########
+#################
+
+
+
 
 # Disable offering of Malicious Software Removal Tool through Windows Update
 Function DisableUpdateMSRT {
@@ -1147,9 +1171,14 @@ Function EnableFastStartup {
 
 
 
-##########
+
+
+#############
 # UI Tweaks
-##########
+#############
+
+
+
 
 # Disable Action Center
 Function DisableActionCenter {
@@ -1513,9 +1542,14 @@ Function DisableNumlock {
 
 
 
-##########
+
+
+#####################
 # Explorer UI Tweaks
-##########
+#####################
+
+
+
 
 # Show known file extensions
 Function ShowKnownExtensions {
@@ -1869,9 +1903,15 @@ Function EnableThumbsDB {
 
 
 
-##########
+
+
+#####################
 # Application Tweaks
-##########
+#####################
+
+
+
+
 
 # Disable OneDrive
 Function DisableOneDrive {
@@ -2303,9 +2343,13 @@ Function AddFaxPrinter {
 
 
 
-##########
+
+##########################
 # Server specific Tweaks
-##########
+##########################
+
+
+
 
 # Hide Server Manager after login
 Function HideServerManagerOnLogin {
@@ -2399,9 +2443,14 @@ Function DisableAudio {
 
 
 
-##########
+
+
+#############
 # Unpinning
-##########
+#############
+
+
+
 
 # Unpin all Start Menu tiles - Note: This function has no counterpart. You have to pin the tiles back manually.
 Function UnpinStartMenuTiles {
@@ -2428,9 +2477,14 @@ Function UnpinTaskbarIcons {
 
 
 
-##########
+
+
+######################
 # Auxiliary Functions
-##########
+######################
+
+
+
 
 # Relaunch the script with administrator privileges
 Function RequireAdmin {
@@ -2452,9 +2506,15 @@ Function Restart {
 	Restart-Computer
 }
 
-###########
-# Titus Additions
-###########
+
+
+
+######################
+# Verathor Additions
+######################
+
+
+
 
 Function EnableDarkMode {
   Write-Output "Enabling Dark Mode"
@@ -2466,9 +2526,17 @@ Function DisableDarkMode {
 	Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme
 }
 
-##########
+
+
+
+
+
+###########################
 # Debloat Script Additions
-##########
+###########################
+
+
+
 
 Function Stop-EdgePDF {
     
@@ -2574,9 +2642,15 @@ Function DebloatAll {
     }
 }
 
-##########
+
+
+
+####################################
 # Parse parameters and apply tweaks
-##########
+####################################
+
+
+
 
 # Normalize path to preset file
 $preset = ""
