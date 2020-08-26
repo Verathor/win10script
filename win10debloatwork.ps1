@@ -29,10 +29,10 @@ $tweaks = @(
 	"RequireAdmin",
 	"CreateRestorePoint",
 	### External Program Setup
-	"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-	"InstallAdobe",
-	"Install7Zip",
-	"InstallNotepadplusplus",
+	#"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+	#"InstallAdobe",
+	#"Install7Zip",
+	#"InstallNotepadplusplus",
 	#"InstallMediaPlayerClassic",
 
 	### Windows Apps
