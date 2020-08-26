@@ -27,7 +27,7 @@
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
-
+	"CreateRestorePoint",
 	### External Program Setup
 	"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"InstallAdobe",
@@ -2634,6 +2634,17 @@ Function Stop-EdgePDF {
         Set-Item $Edge AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723_ 
     }
 }
+
+
+
+Function CreateRestorePoint {
+	Write-Output "Creating Restore Point incase something bad happens"
+	Enable-ComputerRestore -Drive "C:\"
+	Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
+}
+
+
+
 
 Function DebloatAll {
 
