@@ -233,7 +233,7 @@ Function InstallNotepadplusplus {
 # Function InstallMediaPlayerClassic {
 #	Write-Output "Installing Media Player Classic (VLC Alternative)"
 #	choco install mpc-hc -y
-}
+#}
 
 
 
