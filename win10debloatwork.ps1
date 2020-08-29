@@ -29,7 +29,7 @@ $tweaks = @(
 	"RequireAdmin",
 	"CreateRestorePoint",
 	### External Program Setup
-	#"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+	"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	#"InstallAdobe",
 	#"Install7Zip",
 	#"InstallNotepadplusplus",
@@ -230,10 +230,10 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
-# Function InstallMediaPlayerClassic {
-#	Write-Output "Installing Media Player Classic (VLC Alternative)"
-#	choco install mpc-hc -y
-#}
+ Function InstallMediaPlayerClassic {
+	Write-Output "Installing Media Player Classic (VLC Alternative)"
+	choco install mpc-hc -y
+}
 
 
 
