@@ -39,44 +39,44 @@ $tweaks = @(
 	"DebloatAll",
 
 	### Privacy Tweaks ###
-	"DisableTelemetry",             # "EnableTelemetry",
-	#"DisableWiFiSense",             # "EnableWiFiSense",
-	"DisableSmartScreen",         # "EnableSmartScreen",
-	"DisableWebSearch",             # "EnableWebSearch",
-	"DisableAppSuggestions",        # "EnableAppSuggestions",
-	#"DisableActivityHistory",       # "EnableActivityHistory",
-	"DisableBackgroundApps",        # "EnableBackgroundApps",
-	"DisableLocationTracking",      # "EnableLocationTracking",
-	"DisableMapUpdates",            # "EnableMapUpdates",
-	"DisableFeedback",              # "EnableFeedback",
-	"DisableTailoredExperiences",   # "EnableTailoredExperiences",
-	"DisableAdvertisingID",         # "EnableAdvertisingID",
-	"DisableCortana",               # "EnableCortana",
-	"DisableErrorReporting",        # "EnableErrorReporting",
-	"SetP2PUpdateLocal",          # "SetP2PUpdateInternet",
-	"DisableDiagTrack",             # "EnableDiagTrack",
-	"DisableWAPPush",               # "EnableWAPPush",
+	"DisableTelemetry",                   # "EnableTelemetry",
+	#"DisableWiFiSense",                  # "EnableWiFiSense",
+	"DisableSmartScreen",                 # "EnableSmartScreen",
+	"DisableWebSearch",                   # "EnableWebSearch",
+	"DisableAppSuggestions",              # "EnableAppSuggestions",
+	#"DisableActivityHistory",            # "EnableActivityHistory",
+	"DisableBackgroundApps",              # "EnableBackgroundApps",
+	"DisableLocationTracking",            # "EnableLocationTracking",
+	"DisableMapUpdates",                  # "EnableMapUpdates",
+	"DisableFeedback",                    # "EnableFeedback",
+	"DisableTailoredExperiences",         # "EnableTailoredExperiences",
+	"DisableAdvertisingID",               # "EnableAdvertisingID",
+	"DisableCortana",                     # "EnableCortana",
+	"DisableErrorReporting",              # "EnableErrorReporting",
+	"SetP2PUpdateLocal",                  # "SetP2PUpdateInternet",
+	"DisableDiagTrack",                   # "EnableDiagTrack",
+	"DisableWAPPush",                     # "EnableWAPPush",
 
 	### Security Tweaks ###
-	#"SetUACLow",                  # "SetUACHigh",
-	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
-	# "DisableAdminShares",           # "EnableAdminShares",
-	#"DisableSMB1",                # "EnableSMB1",
-	# "DisableSMBServer",           # "EnableSMBServer",
-	# "DisableLLMNR",               # "EnableLLMNR",
-	#"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
-	#"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
-	"DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
-	#"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
-	# "DisableFirewall",            # "EnableFirewall",
-	"DisableDefender",            # "EnableDefender",
-	"DisableDefenderCloud",       # "EnableDefenderCloud",
-	"EnableF8BootMenu",             # "DisableF8BootMenu",
-	#"SetDEPOptOut",                 # "SetDEPOptIn",
-	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
-	#"DisableScriptHost",            # "EnableScriptHost",
-	#"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
-	"DisableMeltdownCompatFlag", # "EnableMeltdownCompatFlag"    
+	#"SetUACLow",                         # "SetUACHigh",
+	# "EnableSharingMappedDrives",        # "DisableSharingMappedDrives",
+	# "DisableAdminShares",               # "EnableAdminShares",
+	#"DisableSMB1",                       # "EnableSMB1",
+	# "DisableSMBServer",                 # "EnableSMBServer",
+	# "DisableLLMNR",                     # "EnableLLMNR",
+	#"SetCurrentNetworkPrivate",          # "SetCurrentNetworkPublic",
+	#"SetUnknownNetworksPrivate",         # "SetUnknownNetworksPublic",
+	"DisableNetDevicesAutoInst",          # "EnableNetDevicesAutoInst",
+	#"DisableCtrldFolderAccess",          # "EnableCtrldFolderAccess",
+	# "DisableFirewall",                  # "EnableFirewall",
+	"DisableDefender",                    # "EnableDefender",
+	"DisableDefenderCloud",               # "EnableDefenderCloud",
+	"EnableF8BootMenu",                   # "DisableF8BootMenu",
+	#"SetDEPOptOut",                      # "SetDEPOptIn",
+	# "EnableCIMemoryIntegrity",          # "DisableCIMemoryIntegrity",
+	#"DisableScriptHost",                 # "EnableScriptHost",
+	#"EnableDotNetStrongCrypto",          # "DisableDotNetStrongCrypto",
+	"DisableMeltdownCompatFlag",          # "EnableMeltdownCompatFlag"    
 
 	### Service Tweaks ###
 	"DisableUpdateMSRT",          # "EnableUpdateMSRT",
@@ -154,19 +154,19 @@ $tweaks = @(
 	#"UninstallOneDrive",            # "InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
-	# "UninstallWindowsStore",      # "InstallWindowsStore",
-	# "DisableXboxFeatures",          # "EnableXboxFeatures",
+	#"UninstallWindowsStore",      # "InstallWindowsStore",
+	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	#"DisableAdobeFlash",            # "EnableAdobeFlash",
 	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	#"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	#"UninstallWorkFolders",       # "InstallWorkFolders",
 	#"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
-	# "InstallHyperV",              # "UninstallHyperV",
+	#"InstallHyperV",              # "UninstallHyperV",
 	#"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	#"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
 	#"InstallPDFPrinter",		# "UninstallPDFPrinter",
-	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
-	# "RemoveFaxPrinter",             # "AddFaxPrinter",
+	#"UninstallXPSPrinter",          # "InstallXPSPrinter",
+	#"RemoveFaxPrinter",             # "AddFaxPrinter",
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
@@ -2164,7 +2164,7 @@ Function InstallWindowsStore {
 	Get-AppxPackage -AllUsers "Microsoft.WindowsStore" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 }
 
-# Disable Xbox features
+# DisableXbox features
 Function DisableXboxFeatures {
 	Write-Output "Disabling Xbox features..."
 	Get-AppxPackage "Microsoft.XboxApp" | Remove-AppxPackage
@@ -2172,6 +2172,7 @@ Function DisableXboxFeatures {
 	Get-AppxPackage "Microsoft.XboxSpeechToTextOverlay" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.XboxGameOverlay" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Xbox.TCUI" | Remove-AppxPackage
+	Get-AppxPackage -AllUsers Microsoft.XboxGamingOverlay | Remove-AppxPackage	#Added
 	Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name "GameDVR_Enabled" -Type DWord -Value 0
 	If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR")) {
 		New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR" | Out-Null
