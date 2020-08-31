@@ -2114,6 +2114,26 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "SpotifyAB.SpotifyMusic" | Remove-AppxPackage
 	Get-AppxPackage "WinZipComputing.WinZipUniversal" | Remove-AppxPackage
 	Get-AppxPackage "XINGAG.XING" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPSystemInformation" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPPCHardwareDiagnosticsWindows" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPPrivacySettings" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPJumpStarts" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPSupportAssistant" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPInc.EnergyStar" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPSystemEventUtility" | Remove-AppxPackage
+	Get-AppxPackage "AD2F1837.HPSureShieldAI" | Remove-AppxPackage
+	Get-AppxPackage "DB6EA5DB.Power2GoforDell" | Remove-AppxPackage
+	Get-AppxPackage "DellInc.DellSupportAssistforPCs" | Remove-AppxPackage
+	Get-AppxPackage "DellInc.DellDigitalDelivery" | Remove-AppxPackage
+	Get-AppxPackage "DellInc.DellCommandUpdate" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	DISM /Online /Remove-ProvisionedAppxPackage /PackageName:AD2F1837.HPJumpStarts_1.5.1296.0_neutral_~_v10z8vjag6ke6
 }
 
 # Install default third party applications
@@ -2696,8 +2716,8 @@ Function DebloatAll {
         "*Dolby*"
              
         #Optional: Typically not removed but you can if you need to for some reason
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
-        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
+        "*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
         "*Microsoft.BingWeather*"
         #"*Microsoft.MSPaint*"
         #"*Microsoft.MicrosoftStickyNotes*"
