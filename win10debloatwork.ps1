@@ -2660,17 +2660,17 @@ Function Stop-EdgePDF {
 
 Function CreateRestorePoint {
 	Write-Output "Creating Restore Point incase something bad happens"
-	$regkeypath= "HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" 
-		$value1 = (Get-ItemProperty $regkeypath -ErrorAction SilentlyContinue).Zoiper -eq $null 
-		If ($value1 -eq $False) {
-			New-Item -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion" -Name SystemRestore
-			New-ItemProperty -Path HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
-		} Else {
-			Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
-}
-		"HKCU:\software\microsoft\windows nt\currentversion\systemrestore" exists
-		New-Item -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore"
-		New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore" -Name SystemRestorePointCreationFrequency -Value 5
+	#$regkeypath= "HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" 
+	#	$value1 = (Get-ItemProperty $regkeypath -ErrorAction SilentlyContinue).Zoiper -eq $null 
+	#	If ($value1 -eq $False) {
+	#		New-Item -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion" -Name SystemRestore
+	#		New-ItemProperty -Path HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
+	#	} Else {
+	#		Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
+#}
+	#	"HKCU:\software\microsoft\windows nt\currentversion\systemrestore" exists
+	#	New-Item -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore"
+	#	New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore" -Name SystemRestorePointCreationFrequency -Value 5
 	Enable-ComputerRestore -Drive "C:\"
 	Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
 	$ErrorActionPreferance = "Stop"
