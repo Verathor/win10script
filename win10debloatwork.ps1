@@ -2523,29 +2523,87 @@ Function DisableAudio {
 
 
 # Unpin all Start Menu tiles - Note: This function has no counterpart. You have to pin the tiles back manually.
-Function UnpinStartMenuTiles {
-	Write-Output "Unpinning all Start Menu tiles..."
-	If ([System.Environment]::OSVersion.Version.Build -ge 15063 -And [System.Environment]::OSVersion.Version.Build -le 16299) {
-		Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Include "*.group" -Recurse | ForEach-Object {
-			$data = (Get-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data").Data -Join ","
-			$data = $data.Substring(0, $data.IndexOf(",0,202,30") + 9) + ",0,202,80,0,0"
-			Set-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data" -Type Binary -Value $data.Split(",")
-		}
-	} ElseIf ([System.Environment]::OSVersion.Version.Build -eq 17133) {
-		$key = Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Recurse | Where-Object { $_ -like "*start.tilegrid`$windows.data.curatedtilecollection.tilecollection\Current" }
-		$data = (Get-ItemProperty -Path $key.PSPath -Name "Data").Data[0..25] + ([byte[]](202,50,0,226,44,1,1,0,0))
-		Set-ItemProperty -Path $key.PSPath -Name "Data" -Type Binary -Value $data
-	}
-}
+#Function UnpinStartMenuTiles {
+#	Write-Output "Unpinning all Start Menu tiles..."
+##	If ([System.Environment]::OSVersion.Version.Build -ge 15063 -And [System.Environment]::OSVersion.Version.Build -le 16299) {
+#		Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Include "*.group" -Recurse | ForEach-Object {
+#			$data = (Get-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data").Data -Join ","
+#			$data = $data.Substring(0, $data.IndexOf(",0,202,30") + 9) + ",0,202,80,0,0"
+#			Set-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data" -Type Binary -Value $data.Split(",")
+#		}
+#	} ElseIf ([System.Environment]::OSVersion.Version.Build -eq 17133) {
+#		$key = Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Recurse | Where-Object { $_ -like "*start.tilegrid`$windows.data.curatedtilecollection.tilecollection\Current" }
+#		$data = (Get-ItemProperty -Path $key.PSPath -Name "Data").Data[0..25] + ([byte[]](202,50,0,226,44,1,1,0,0))
+#		Set-ItemProperty -Path $key.PSPath -Name "Data" -Type Binary -Value $data
+#	}
+#}
 
 # Unpin all Taskbar icons - Note: This function has no counterpart. You have to pin the icons back manually.
-Function UnpinTaskbarIcons {
-	Write-Output "Unpinning all Taskbar icons..."
-	Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "Favorites" -Type Binary -Value ([byte[]](255))
-	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "FavoritesResolve" -ErrorAction SilentlyContinue
+#Function UnpinTaskbarIcons {
+#	Write-Output "Unpinning all Taskbar icons..."
+#	Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "Favorites" -Type Binary -Value ([byte[]](255))
+#	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "FavoritesResolve" -ErrorAction SilentlyContinue
+#
+
+Function UnpinStartMenuTiles {
+	equires -RunAsAdministrator
+
+$START_MENU_LAYOUT = @"
+<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+    <LayoutOptions StartTileGroupCellWidth="6" />
+    <DefaultLayoutOverride>
+        <StartLayoutCollection>
+            <defaultlayout:StartLayout GroupCellWidth="6" />
+        </StartLayoutCollection>
+    </DefaultLayoutOverride>
+</LayoutModificationTemplate>
+"@
+
+$layoutFile="C:\Windows\StartMenuLayout.xml"
+
+Delete layout file if it already exists
+If(Test-Path $layoutFile)
+{
+    Remove-Item $layoutFile
+    }
+
+    #Creates the blank layout file
+    $START_MENU_LAYOUT | Out-File $layoutFile -Encoding ASCII
+
+    $regAliases = @("HKLM", "HKCU")
+
+    #Assign the start layout and force it to apply with "LockedStartLayout" at both the machine and user level
+    foreach ($regAlias in $regAliases){
+        $basePath = $regAlias + ":\SOFTWARE\Policies\Microsoft\Windows"
+            $keyPath = $basePath + "\Explorer" 
+                IF(!(Test-Path -Path $keyPath)) { 
+                        New-Item -Path $basePath -Name "Explorer"
+                            }
+                                Set-ItemProperty -Path $keyPath -Name "LockedStartLayout" -Value 1
+                                    Set-ItemProperty -Path $keyPath -Name "StartLayoutFile" -Value $layoutFile
+                                    }
+
+                                    #Restart Explorer, open the start menu (necessary to load the new layout), and give it a few seconds to process
+                                    Stop-Process -name explorer
+                                    Start-Sleep -s 5
+                                    $wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('^{ESCAPE}')
+                                    Start-Sleep -s 5
+
+                                    #Enable the ability to pin items again by disabling "LockedStartLayout"
+                                    foreach ($regAlias in $regAliases){
+                                        $basePath = $regAlias + ":\SOFTWARE\Policies\Microsoft\Windows"
+                                            $keyPath = $basePath + "\Explorer" 
+                                                Set-ItemProperty -Path $keyPath -Name "LockedStartLayout" -Value 0
+                                                }
+
+                                                #Restart Explorer and delete the layout file
+                                                Stop-Process -name explorer
+
+                                                # Uncomment the next line to make clean start menu default for all new users
+                                                #Import-StartLayout -LayoutPath $layoutFile -MountPath $env:SystemDrive\
+
+                                                Remove-Item $layoutFile
 }
-
-
 
 
 

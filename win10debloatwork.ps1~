@@ -2667,7 +2667,7 @@ Function CreateRestorePoint {
 	#		New-ItemProperty -Path HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
 	#	} Else {
 	#		Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
-}
+#}
 	#	"HKCU:\software\microsoft\windows nt\currentversion\systemrestore" exists
 	#	New-Item -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore"
 	#	New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore" -Name SystemRestorePointCreationFrequency -Value 5
