@@ -2126,12 +2126,12 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "DellInc.DellSupportAssistforPCs" | Remove-AppxPackage
 	Get-AppxPackage "DellInc.DellDigitalDelivery" | Remove-AppxPackage
 	Get-AppxPackage "DellInc.DellCommandUpdate" | Remove-AppxPackage
-	#Get-AppxPackage "" | Remove-AppxPackage
-	#Get-AppxPackage "" | Remove-AppxPackage
-	#Get-AppxPackage "" | Remove-AppxPackage
-	#Get-AppxPackage "" | Remove-AppxPackage
-	#Get-AppxPackage "" | Remove-AppxPackage
-	#Get-AppxPackage "" | Remove-AppxPackage
+	Get-AppxPackage *booking.com* | Remove-AppxPackage
+	Get-AppxPackage "PricelinePartnerNetwork.Booking.comUSABigsavingson" | Remove-AppxPackage
+	Get-AppxPackage "5A894077.McAfeeSecurity" | Remove-AppxPackage
+	Get-AppxPackage "C27EB4BA.DropboxOEM" | Remove-AppxPackage
+	Get-AppxPackage "Amazon.com.Amazon" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MixedReality.Portal" | Remove-AppxPackage
 	#Get-AppxPackage "" | Remove-AppxPackage
 	DISM /Online /Remove-ProvisionedAppxPackage /PackageName:AD2F1837.HPJumpStarts_1.5.1296.0_neutral_~_v10z8vjag6ke6
 }
