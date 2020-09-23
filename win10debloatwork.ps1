@@ -2029,6 +2029,13 @@ Function UninstallMsftBloat {
 	Get-AppxPackage -AllUsers "Microsoft.WindowsPhone" | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers "Microsoft.Windows.Photos" | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.XboxGameCallableUI" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Xbox.TCUI" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.XboxSpeechToTextOverlay" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.XboxIdentityProvider" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.XboxGameOverlay" | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers "Microsoft.ZuneMusic" | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers "Microsoft.ZuneVideo" | Remove-AppxPackage -AllUsers
 
