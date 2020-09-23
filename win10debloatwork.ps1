@@ -1993,44 +1993,45 @@ Function InstallOneDrive {
 # Uninstall default Microsoft applications
 Function UninstallMsftBloat {
 	Write-Output "Uninstalling default Microsoft applications..."
-	Get-AppxPackage -AllUsers "Microsoft.3DBuilder" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.AppConnector" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingFinance" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingNews" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingSports" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingTranslator" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingWeather" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.CommsPhone" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.ConnectivityStore" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.GetHelp" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Getstarted" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Messaging" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Microsoft3DViewer" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftPowerBIForWindows" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MinecraftUWP" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MSPaint" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.NetworkSpeedTest" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Office.OneNote" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Office.Sway" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.OneConnect" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.People" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Print3D" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.RemoteDesktop" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.SkypeApp" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Wallet" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsAlarms" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsCamera" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "microsoft.windowscommunicationsapps" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsMaps" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsPhone" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Windows.Photos" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.ZuneMusic" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.ZuneVideo" | Remove-AppxPackage
+	Get-AppxPackage -AllUsers "Microsoft.3DBuilder" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.AppConnector" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.BingFinance" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.BingNews" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.BingSports" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.BingTranslator" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.BingWeather" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.CommsPhone" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.ConnectivityStore" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.GetHelp" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Getstarted" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Messaging" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Microsoft3DViewer" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.MicrosoftPowerBIForWindows" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.MinecraftUWP" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.MSPaint" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.NetworkSpeedTest" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Office.OneNote" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Office.Sway" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.OneConnect" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.People" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Print3D" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.RemoteDesktop" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.SkypeApp" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Wallet" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.WindowsAlarms" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.WindowsCamera" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "microsoft.windowscommunicationsapps" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.WindowsMaps" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.WindowsPhone" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.Windows.Photos" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.ZuneMusic" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers "Microsoft.ZuneVideo" | Remove-AppxPackage -AllUsers
+
 }
 
 # Install default Microsoft applications
@@ -2086,113 +2087,59 @@ Function InstallMsftBloat {
 function UninstallThirdPartyBloat {
 	Write-Output "Uninstalling default third party applications..."
 	Get-AppxPackage -AllUsers "2414FC7A.Viber" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "41038Axilesoft.ACGMediaPlayer" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "46928bounde.EclipseManager" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "4DF9E0F8.Netflix" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "64885BlueEdge.OneCalendar" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "7EE7776C.LinkedInforWindows" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "828B5831.HiddenCityMysteryofShadows" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "89006A2E.AutodeskSketchBook" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "9E2F88E3.Twitter" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "A278AB0D.DisneyMagicKingdoms" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "A278AB0D.MarchofEmpires" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "ActiproSoftwareLLC.562882FEEB491" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AdobeSystemsIncorporated.AdobePhotoshopExpress" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "CAF9E577.Plex" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "D52A8D61.FarmVille2CountryEscape" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "D5EA27B7.Duolingo-LearnLanguagesforFree" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "DB6EA5DB.CyberLinkMediaSuiteEssentials" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "DolbyLaboratories.DolbyAccess" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "Drawboard.DrawboardPDF" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "Facebook.Facebook" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "flaregamesGmbH.RoyalRevolt2" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "GAMELOFTSA.Asphalt8Airborne" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "KeeperSecurityInc.Keeper" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "king.com.BubbleWitch3Saga" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "king.com.CandyCrushSodaSaga" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "PandoraMediaInc.29680B314EFC2" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "SpotifyAB.SpotifyMusic" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "WinZipComputing.WinZipUniversal" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "XINGAG.XING" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPSystemInformation" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPPCHardwareDiagnosticsWindows" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPPrivacySettings" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPSupportAssistant" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPInc.EnergyStar" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPSystemEventUtility" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPSureShieldAI" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "DB6EA5DB.Power2GoforDell" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "DellInc.DellSupportAssistforPCs" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "DellInc.DellDigitalDelivery" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage "-AllUsers DellInc.DellCommandUpdate" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers *booking.com* | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "PricelinePartnerNetwork.Booking.comUSABigsavingson" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "5A894077.McAfeeSecurity" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "C27EB4BA.DropboxOEM" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "Amazon.com.Amazon" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "Microsoft.MixedReality.Portal" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPInc.EnergyStar_1.2.0.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPPrivacySettings_1.0.38.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPSystemEventUtility_1.1.20.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "AD2F1837.HPSupportAssistant_9.6.714.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "MixedRealityLearning_10.0.18362.449_neutral__cw5n1h2txyewy" | Remove-AppxPackage -AllUsers
-
 	Get-AppxPackage -AllUsers "PricelinePartnerNetwork.Booking.comUSABigsavingson_2.0.2.0_x64__mgae2k3ys4ra0" | Remove-AppxPackage -AllUsers
 	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
 	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
