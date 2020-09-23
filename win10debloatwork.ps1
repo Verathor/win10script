@@ -2806,6 +2806,7 @@ Function DebloatAll {
         "*Sway*"
         "*Speed Test*"
         "*Dolby*"
+	"*HP Support Assist*"
              
         #Optional: Typically not removed but you can if you need to for some reason
         "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
