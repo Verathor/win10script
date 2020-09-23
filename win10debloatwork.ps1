@@ -2713,7 +2713,10 @@ Function DisableDarkMode {
 
 Function Stop-EdgePDF {
     
-    #Stops edge from taking over as the default .PDF viewer    
+    #Stops edge from taking over as the default .PDF viewer and removes it from startup via registry
+    
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft" -Name MicrosoftEdge -Value 0
+
     Write-Output "Stopping Edge from taking over as the default .PDF viewer"
     $NoPDF = "HKCR:\.pdf"
     $NoProgids = "HKCR:\.pdf\OpenWithProgids"
