@@ -2583,7 +2583,7 @@ $START_MENU_LAYOUT = @"
 
 $layoutFile="C:\Windows\StartMenuLayout.xml"
 
-Delete layout file if it already exists
+#Delete layout file if it already exists
 If(Test-Path $layoutFile)
 {
     Remove-Item $layoutFile
