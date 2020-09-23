@@ -27,64 +27,64 @@
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
-	"CreateRestorePoint",
+
 	### External Program Setup
 	"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-	#"InstallAdobe",
-	#"Install7Zip",
-	#"InstallNotepadplusplus",
+	"InstallAdobe",
+	"Install7Zip",
+	"InstallNotepadplusplus",
 	#"InstallMediaPlayerClassic",
 
 	### Windows Apps
 	"DebloatAll",
 
 	### Privacy Tweaks ###
-	"DisableTelemetry",                   # "EnableTelemetry",
-	#"DisableWiFiSense",                  # "EnableWiFiSense",
-	"DisableSmartScreen",                 # "EnableSmartScreen",
-	"DisableWebSearch",                   # "EnableWebSearch",
-	"DisableAppSuggestions",              # "EnableAppSuggestions",
-	#"DisableActivityHistory",            # "EnableActivityHistory",
-	"DisableBackgroundApps",              # "EnableBackgroundApps",
-	"DisableLocationTracking",            # "EnableLocationTracking",
-	"DisableMapUpdates",                  # "EnableMapUpdates",
-	"DisableFeedback",                    # "EnableFeedback",
-	"DisableTailoredExperiences",         # "EnableTailoredExperiences",
-	"DisableAdvertisingID",               # "EnableAdvertisingID",
-	"DisableCortana",                     # "EnableCortana",
-	"DisableErrorReporting",              # "EnableErrorReporting",
-	"SetP2PUpdateLocal",                  # "SetP2PUpdateInternet",
-	"DisableDiagTrack",                   # "EnableDiagTrack",
-	"DisableWAPPush",                     # "EnableWAPPush",
+	"DisableTelemetry",             # "EnableTelemetry",
+	"DisableWiFiSense",             # "EnableWiFiSense",
+	"DisableSmartScreen",         # "EnableSmartScreen",
+	"DisableWebSearch",             # "EnableWebSearch",
+	"DisableAppSuggestions",        # "EnableAppSuggestions",
+	"DisableActivityHistory",       # "EnableActivityHistory",
+	"DisableBackgroundApps",        # "EnableBackgroundApps",
+	"DisableLocationTracking",      # "EnableLocationTracking",
+	"DisableMapUpdates",            # "EnableMapUpdates",
+	"DisableFeedback",              # "EnableFeedback",
+	"DisableTailoredExperiences",   # "EnableTailoredExperiences",
+	"DisableAdvertisingID",         # "EnableAdvertisingID",
+	"DisableCortana",               # "EnableCortana",
+	"DisableErrorReporting",        # "EnableErrorReporting",
+	"SetP2PUpdateLocal",          # "SetP2PUpdateInternet",
+	"DisableDiagTrack",             # "EnableDiagTrack",
+	"DisableWAPPush",               # "EnableWAPPush",
 
 	### Security Tweaks ###
-	#"SetUACLow",                         # "SetUACHigh",
-	# "EnableSharingMappedDrives",        # "DisableSharingMappedDrives",
-	# "DisableAdminShares",               # "EnableAdminShares",
-	#"DisableSMB1",                       # "EnableSMB1",
-	# "DisableSMBServer",                 # "EnableSMBServer",
-	# "DisableLLMNR",                     # "EnableLLMNR",
-	#"SetCurrentNetworkPrivate",          # "SetCurrentNetworkPublic",
-	#"SetUnknownNetworksPrivate",         # "SetUnknownNetworksPublic",
-	"DisableNetDevicesAutoInst",          # "EnableNetDevicesAutoInst",
-	#"DisableCtrldFolderAccess",          # "EnableCtrldFolderAccess",
-	# "DisableFirewall",                  # "EnableFirewall",
-	"DisableDefender",                    # "EnableDefender",
-	"DisableDefenderCloud",               # "EnableDefenderCloud",
-	"EnableF8BootMenu",                   # "DisableF8BootMenu",
-	#"SetDEPOptOut",                      # "SetDEPOptIn",
-	# "EnableCIMemoryIntegrity",          # "DisableCIMemoryIntegrity",
-	#"DisableScriptHost",                 # "EnableScriptHost",
-	#"EnableDotNetStrongCrypto",          # "DisableDotNetStrongCrypto",
-	"DisableMeltdownCompatFlag",          # "EnableMeltdownCompatFlag"    
+	"SetUACLow",                  # "SetUACHigh",
+	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
+	# "DisableAdminShares",           # "EnableAdminShares",
+	"DisableSMB1",                # "EnableSMB1",
+	# "DisableSMBServer",           # "EnableSMBServer",
+	# "DisableLLMNR",               # "EnableLLMNR",
+	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
+	"SetUnknownNetworksPrivate",  # "SetUnknownNetworksPublic",
+	"DisableNetDevicesAutoInst",  # "EnableNetDevicesAutoInst",
+	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",
+	# "DisableFirewall",            # "EnableFirewall",
+	"DisableDefender",            # "EnableDefender",
+	"DisableDefenderCloud",       # "EnableDefenderCloud",
+	"EnableF8BootMenu",             # "DisableF8BootMenu",
+	#"SetDEPOptOut",                 # "SetDEPOptIn",
+	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
+	#"DisableScriptHost",            # "EnableScriptHost",
+	#"EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
+	"DisableMeltdownCompatFlag", # "EnableMeltdownCompatFlag"    
 
 	### Service Tweaks ###
 	"DisableUpdateMSRT",          # "EnableUpdateMSRT",
-	#"DisableUpdateDriver",        # "EnableUpdateDriver",
+	"DisableUpdateDriver",        # "EnableUpdateDriver",
 	"DisableUpdateRestart",         # "EnableUpdateRestart",
 	"DisableHomeGroups",          # "EnableHomeGroups",
 	"DisableSharedExperiences",     # "EnableSharedExperiences",
-	#"DisableRemoteAssistance",      # "EnableRemoteAssistance",
+	"DisableRemoteAssistance",      # "EnableRemoteAssistance",
 	"EnableRemoteDesktop",          # "DisableRemoteDesktop",
 	"DisableAutoplay",              # "EnableAutoplay",
 	"DisableAutorun",               # "EnableAutorun",
@@ -100,21 +100,21 @@ $tweaks = @(
 
 	### UI Tweaks ###
 	"DisableActionCenter",          # "EnableActionCenter",
-	#"DisableLockScreen",            # "EnableLockScreen",
-	#"DisableLockScreenRS1",       # "EnableLockScreenRS1",
+	"DisableLockScreen",            # "EnableLockScreen",
+	"DisableLockScreenRS1",       # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen",   # "ShowShutdownOnLockScreen",
 	"DisableStickyKeys",            # "EnableStickyKeys",
-	"ShowTaskManagerDetails",        # "HideTaskManagerDetails",
+	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
 	#"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
-	#"HideTaskbarSearch",
+	"HideTaskbarSearch",
 	"ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",
 	"HideTaskView",                 # "ShowTaskView",
 	# "ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	"HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
-	#"ShowTrayIcons",                # "HideTrayIcons",
+	"ShowTrayIcons",                # "HideTrayIcons",
 	"DisableSearchAppInStore",      # "EnableSearchAppInStore",
 	"DisableNewAppPrompt",          # "EnableNewAppPrompt",
 	"SetControlPanelCategories",    # "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons", 
@@ -127,7 +127,7 @@ $tweaks = @(
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
 	# "ShowHiddenFiles",              # "HideHiddenFiles",
-	"HideSyncNotifications",         # "ShowSyncNotifications",
+	"HideSyncNotifications"         # "ShowSyncNotifications",
 	# "HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
 	"HideThisPCFromDesktop",	# "ShowThisPCOnDesktop",
@@ -154,19 +154,19 @@ $tweaks = @(
 	#"UninstallOneDrive",            # "InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
-	#"UninstallWindowsStore",      # "InstallWindowsStore",
-	"DisableXboxFeatures",          # "EnableXboxFeatures",
-	#"DisableAdobeFlash",            # "EnableAdobeFlash",
+	# "UninstallWindowsStore",      # "InstallWindowsStore",
+	# "DisableXboxFeatures",          # "EnableXboxFeatures",
+	"DisableAdobeFlash",            # "EnableAdobeFlash",
 	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	#"UninstallInternetExplorer",  # "InstallInternetExplorer",
-	#"UninstallWorkFolders",       # "InstallWorkFolders",
+	"UninstallWorkFolders",       # "InstallWorkFolders",
 	#"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
-	#"InstallHyperV",              # "UninstallHyperV",
-	#"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
-	#"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
-	#"InstallPDFPrinter",		# "UninstallPDFPrinter",
-	#"UninstallXPSPrinter",          # "InstallXPSPrinter",
-	#"RemoveFaxPrinter",             # "AddFaxPrinter",
+	# "InstallHyperV",              # "UninstallHyperV",
+	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
+	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
+	"InstallPDFPrinter",		# "UninstallPDFPrinter",
+	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
+	# "RemoveFaxPrinter",             # "AddFaxPrinter",
 
 	### Server Specific Tweaks ###
 	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
@@ -177,7 +177,7 @@ $tweaks = @(
 	# "EnableAudio",                # "DisableAudio",
 
 	### Unpinning ###
-	"UnpinStartMenuTiles"
+	"UnpinStartMenuTiles",
 	#"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
@@ -200,9 +200,9 @@ $tweaks = @(
 
 
 Function InstallVerathorProgs {
-#	Write-Output "Installing Chocolatey"
-#	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-#	choco install chocolatey-core.extension -y
+	Write-Output "Installing Chocolatey"
+	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+	choco install chocolatey-core.extension -y
 	Write-Output "Running O&O Shutup with Recommended Settings"
 	Import-Module BitsTransfer
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/Verathor/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
@@ -230,9 +230,9 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
- Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+# Function InstallMediaPlayerClassic {
+#	Write-Output "Installing Media Player Classic (VLC Alternative)"
+#	choco install mpc-hc -y
 }
 
 
@@ -1993,44 +1993,44 @@ Function InstallOneDrive {
 # Uninstall default Microsoft applications
 Function UninstallMsftBloat {
 	Write-Output "Uninstalling default Microsoft applications..."
-	Get-AppxPackage -AllUsers "Microsoft.3DBuilder" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.AppConnector" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingFinance" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingNews" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingSports" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingTranslator" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.BingWeather" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.CommsPhone" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.ConnectivityStore" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.GetHelp" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Getstarted" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Messaging" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Microsoft3DViewer" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftPowerBIForWindows" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MinecraftUWP" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MSPaint" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.NetworkSpeedTest" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Office.OneNote" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Office.Sway" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.OneConnect" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.People" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Print3D" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.RemoteDesktop" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.SkypeApp" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Wallet" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsAlarms" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsCamera" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "microsoft.windowscommunicationsapps" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsMaps" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsPhone" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.Windows.Photos" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.ZuneMusic" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.ZuneVideo" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.3DBuilder" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.BingFinance" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.BingNews" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.BingSports" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.BingTranslator" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.BingWeather" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.GetHelp" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Getstarted" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Messaging" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Microsoft3DViewer" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MicrosoftPowerBIForWindows" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MinecraftUWP" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.NetworkSpeedTest" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.OneConnect" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Print3D" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.RemoteDesktop" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.SkypeApp" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Wallet" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.WindowsAlarms" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.WindowsCamera" | Remove-AppxPackage
+	Get-AppxPackage "microsoft.windowscommunicationsapps" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.WindowsMaps" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
 }
 
 # Install default Microsoft applications
@@ -2085,77 +2085,35 @@ Function InstallMsftBloat {
 # Uninstall default third party applications
 function UninstallThirdPartyBloat {
 	Write-Output "Uninstalling default third party applications..."
-	Get-AppxPackage -AllUsers "2414FC7A.Viber" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "41038Axilesoft.ACGMediaPlayer" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "46928bounde.EclipseManager" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "4DF9E0F8.Netflix" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "64885BlueEdge.OneCalendar" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "7EE7776C.LinkedInforWindows" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "828B5831.HiddenCityMysteryofShadows" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "89006A2E.AutodeskSketchBook" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "9E2F88E3.Twitter" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "A278AB0D.DisneyMagicKingdoms" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "A278AB0D.MarchofEmpires" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "ActiproSoftwareLLC.562882FEEB491" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AdobeSystemsIncorporated.AdobePhotoshopExpress" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "CAF9E577.Plex" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "D52A8D61.FarmVille2CountryEscape" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "D5EA27B7.Duolingo-LearnLanguagesforFree" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "DB6EA5DB.CyberLinkMediaSuiteEssentials" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "DolbyLaboratories.DolbyAccess" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Drawboard.DrawboardPDF" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Facebook.Facebook" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "flaregamesGmbH.RoyalRevolt2" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "GAMELOFTSA.Asphalt8Airborne" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "KeeperSecurityInc.Keeper" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "king.com.BubbleWitch3Saga" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "PandoraMediaInc.29680B314EFC2" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "SpotifyAB.SpotifyMusic" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "WinZipComputing.WinZipUniversal" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "XINGAG.XING" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPSystemInformation" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPPCHardwareDiagnosticsWindows" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPPrivacySettings" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPSupportAssistant" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPInc.EnergyStar" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPSystemEventUtility" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPSureShieldAI" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "DB6EA5DB.Power2GoforDell" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "DellInc.DellSupportAssistforPCs" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "DellInc.DellDigitalDelivery" | Remove-AppxPackage
-	Get-AppxPackage "-AllUsers DellInc.DellCommandUpdate" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers *booking.com* | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "PricelinePartnerNetwork.Booking.comUSABigsavingson" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "5A894077.McAfeeSecurity" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "C27EB4BA.DropboxOEM" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Amazon.com.Amazon" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "Microsoft.MixedReality.Portal" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPInc.EnergyStar_1.2.0.0_x64__v10z8vjag6ke6" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPPrivacySettings_1.0.38.0_x64__v10z8vjag6ke6" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPSystemEventUtility_1.1.20.0_x64__v10z8vjag6ke6" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "AD2F1837.HPSupportAssistant_9.6.714.0_x64__v10z8vjag6ke6" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers "MixedRealityLearning_10.0.18362.449_neutral__cw5n1h2txyewy" | Remove-AppxPackage
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
-
-
-
-
-
-
-
-
-
-
-
-
-	DISM /Online /Remove-ProvisionedAppxPackage /PackageName:AD2F1837.HPJumpStarts_1.5.1296.0_neutral_~_v10z8vjag6ke6
+	Get-AppxPackage "2414FC7A.Viber" | Remove-AppxPackage
+	Get-AppxPackage "41038Axilesoft.ACGMediaPlayer" | Remove-AppxPackage
+	Get-AppxPackage "46928bounde.EclipseManager" | Remove-AppxPackage
+	Get-AppxPackage "4DF9E0F8.Netflix" | Remove-AppxPackage
+	Get-AppxPackage "64885BlueEdge.OneCalendar" | Remove-AppxPackage
+	Get-AppxPackage "7EE7776C.LinkedInforWindows" | Remove-AppxPackage
+	Get-AppxPackage "828B5831.HiddenCityMysteryofShadows" | Remove-AppxPackage
+	Get-AppxPackage "89006A2E.AutodeskSketchBook" | Remove-AppxPackage
+	Get-AppxPackage "9E2F88E3.Twitter" | Remove-AppxPackage
+	Get-AppxPackage "A278AB0D.DisneyMagicKingdoms" | Remove-AppxPackage
+	Get-AppxPackage "A278AB0D.MarchofEmpires" | Remove-AppxPackage
+	Get-AppxPackage "ActiproSoftwareLLC.562882FEEB491" | Remove-AppxPackage
+	Get-AppxPackage "AdobeSystemsIncorporated.AdobePhotoshopExpress" | Remove-AppxPackage
+	Get-AppxPackage "CAF9E577.Plex" | Remove-AppxPackage
+	Get-AppxPackage "D52A8D61.FarmVille2CountryEscape" | Remove-AppxPackage
+	Get-AppxPackage "D5EA27B7.Duolingo-LearnLanguagesforFree" | Remove-AppxPackage
+	Get-AppxPackage "DB6EA5DB.CyberLinkMediaSuiteEssentials" | Remove-AppxPackage
+	Get-AppxPackage "DolbyLaboratories.DolbyAccess" | Remove-AppxPackage
+	Get-AppxPackage "Drawboard.DrawboardPDF" | Remove-AppxPackage
+	Get-AppxPackage "Facebook.Facebook" | Remove-AppxPackage
+	Get-AppxPackage "flaregamesGmbH.RoyalRevolt2" | Remove-AppxPackage
+	Get-AppxPackage "GAMELOFTSA.Asphalt8Airborne" | Remove-AppxPackage
+	Get-AppxPackage "KeeperSecurityInc.Keeper" | Remove-AppxPackage
+	Get-AppxPackage "king.com.BubbleWitch3Saga" | Remove-AppxPackage
+	Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
+	Get-AppxPackage "PandoraMediaInc.29680B314EFC2" | Remove-AppxPackage
+	Get-AppxPackage "SpotifyAB.SpotifyMusic" | Remove-AppxPackage
+	Get-AppxPackage "WinZipComputing.WinZipUniversal" | Remove-AppxPackage
+	Get-AppxPackage "XINGAG.XING" | Remove-AppxPackage
 }
 
 # Install default third party applications
@@ -2206,7 +2164,7 @@ Function InstallWindowsStore {
 	Get-AppxPackage -AllUsers "Microsoft.WindowsStore" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 }
 
-# DisableXbox features
+# Disable Xbox features
 Function DisableXboxFeatures {
 	Write-Output "Disabling Xbox features..."
 	Get-AppxPackage "Microsoft.XboxApp" | Remove-AppxPackage
@@ -2214,7 +2172,6 @@ Function DisableXboxFeatures {
 	Get-AppxPackage "Microsoft.XboxSpeechToTextOverlay" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.XboxGameOverlay" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Xbox.TCUI" | Remove-AppxPackage
-	Get-AppxPackage -AllUsers Microsoft.XboxGamingOverlay | Remove-AppxPackage	#Added
 	Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name "GameDVR_Enabled" -Type DWord -Value 0
 	If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR")) {
 		New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR" | Out-Null
@@ -2545,87 +2502,29 @@ Function DisableAudio {
 
 
 # Unpin all Start Menu tiles - Note: This function has no counterpart. You have to pin the tiles back manually.
-#Function UnpinStartMenuTiles {
-#	Write-Output "Unpinning all Start Menu tiles..."
-##	If ([System.Environment]::OSVersion.Version.Build -ge 15063 -And [System.Environment]::OSVersion.Version.Build -le 16299) {
-#		Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Include "*.group" -Recurse | ForEach-Object {
-#			$data = (Get-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data").Data -Join ","
-#			$data = $data.Substring(0, $data.IndexOf(",0,202,30") + 9) + ",0,202,80,0,0"
-#			Set-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data" -Type Binary -Value $data.Split(",")
-#		}
-#	} ElseIf ([System.Environment]::OSVersion.Version.Build -eq 17133) {
-#		$key = Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Recurse | Where-Object { $_ -like "*start.tilegrid`$windows.data.curatedtilecollection.tilecollection\Current" }
-#		$data = (Get-ItemProperty -Path $key.PSPath -Name "Data").Data[0..25] + ([byte[]](202,50,0,226,44,1,1,0,0))
-#		Set-ItemProperty -Path $key.PSPath -Name "Data" -Type Binary -Value $data
-#	}
-#}
+Function UnpinStartMenuTiles {
+	Write-Output "Unpinning all Start Menu tiles..."
+	If ([System.Environment]::OSVersion.Version.Build -ge 15063 -And [System.Environment]::OSVersion.Version.Build -le 16299) {
+		Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Include "*.group" -Recurse | ForEach-Object {
+			$data = (Get-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data").Data -Join ","
+			$data = $data.Substring(0, $data.IndexOf(",0,202,30") + 9) + ",0,202,80,0,0"
+			Set-ItemProperty -Path "$($_.PsPath)\Current" -Name "Data" -Type Binary -Value $data.Split(",")
+		}
+	} ElseIf ([System.Environment]::OSVersion.Version.Build -eq 17133) {
+		$key = Get-ChildItem -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount" -Recurse | Where-Object { $_ -like "*start.tilegrid`$windows.data.curatedtilecollection.tilecollection\Current" }
+		$data = (Get-ItemProperty -Path $key.PSPath -Name "Data").Data[0..25] + ([byte[]](202,50,0,226,44,1,1,0,0))
+		Set-ItemProperty -Path $key.PSPath -Name "Data" -Type Binary -Value $data
+	}
+}
 
 # Unpin all Taskbar icons - Note: This function has no counterpart. You have to pin the icons back manually.
-#Function UnpinTaskbarIcons {
-#	Write-Output "Unpinning all Taskbar icons..."
-#	Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "Favorites" -Type Binary -Value ([byte[]](255))
-#	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "FavoritesResolve" -ErrorAction SilentlyContinue
-#
-
-Function UnpinStartMenuTiles {
-	equires -RunAsAdministrator
-
-$START_MENU_LAYOUT = @"
-<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
-    <LayoutOptions StartTileGroupCellWidth="6" />
-    <DefaultLayoutOverride>
-        <StartLayoutCollection>
-            <defaultlayout:StartLayout GroupCellWidth="6" />
-        </StartLayoutCollection>
-    </DefaultLayoutOverride>
-</LayoutModificationTemplate>
-"@
-
-$layoutFile="C:\Windows\StartMenuLayout.xml"
-
-Delete layout file if it already exists
-If(Test-Path $layoutFile)
-{
-    Remove-Item $layoutFile
-    }
-
-    #Creates the blank layout file
-    $START_MENU_LAYOUT | Out-File $layoutFile -Encoding ASCII
-
-    $regAliases = @("HKLM", "HKCU")
-
-    #Assign the start layout and force it to apply with "LockedStartLayout" at both the machine and user level
-    foreach ($regAlias in $regAliases){
-        $basePath = $regAlias + ":\SOFTWARE\Policies\Microsoft\Windows"
-            $keyPath = $basePath + "\Explorer" 
-                IF(!(Test-Path -Path $keyPath)) { 
-                        New-Item -Path $basePath -Name "Explorer"
-                            }
-                                Set-ItemProperty -Path $keyPath -Name "LockedStartLayout" -Value 1
-                                    Set-ItemProperty -Path $keyPath -Name "StartLayoutFile" -Value $layoutFile
-                                    }
-
-                                    #Restart Explorer, open the start menu (necessary to load the new layout), and give it a few seconds to process
-                                    Stop-Process -name explorer
-                                    Start-Sleep -s 5
-                                    $wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('^{ESCAPE}')
-                                    Start-Sleep -s 5
-
-                                    #Enable the ability to pin items again by disabling "LockedStartLayout"
-                                    foreach ($regAlias in $regAliases){
-                                        $basePath = $regAlias + ":\SOFTWARE\Policies\Microsoft\Windows"
-                                            $keyPath = $basePath + "\Explorer" 
-                                                Set-ItemProperty -Path $keyPath -Name "LockedStartLayout" -Value 0
-                                                }
-
-                                                #Restart Explorer and delete the layout file
-                                                Stop-Process -name explorer
-
-                                                # Uncomment the next line to make clean start menu default for all new users
-                                                #Import-StartLayout -LayoutPath $layoutFile -MountPath $env:SystemDrive\
-
-                                                Remove-Item $layoutFile
+Function UnpinTaskbarIcons {
+	Write-Output "Unpinning all Taskbar icons..."
+	Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "Favorites" -Type Binary -Value ([byte[]](255))
+	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "FavoritesResolve" -ErrorAction SilentlyContinue
 }
+
+
 
 
 
@@ -2736,29 +2635,6 @@ Function Stop-EdgePDF {
     }
 }
 
-
-
-Function CreateRestorePoint {
-	Write-Output "Creating Restore Point incase something bad happens"
-	#$regkeypath= "HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" 
-	#	$value1 = (Get-ItemProperty $regkeypath -ErrorAction SilentlyContinue).Zoiper -eq $null 
-	#	If ($value1 -eq $False) {
-	#		New-Item -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion" -Name SystemRestore
-	#		New-ItemProperty -Path HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
-	#	} Else {
-	#		Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore -Name SystemRestorePointCreationFrequency -Value 5
-#}
-	#	"HKCU:\software\microsoft\windows nt\currentversion\systemrestore" exists
-	#	New-Item -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore"
-	#	New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore" -Name SystemRestorePointCreationFrequency -Value 5
-	Enable-ComputerRestore -Drive "C:\"
-	Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
-	$ErrorActionPreferance = "Stop"
-}
-
-
-
-
 Function DebloatAll {
 
     $Bloatware = @(
@@ -2808,8 +2684,8 @@ Function DebloatAll {
         "*Dolby*"
              
         #Optional: Typically not removed but you can if you need to for some reason
-        "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
-        "*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
+        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
+        #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
         "*Microsoft.BingWeather*"
         #"*Microsoft.MSPaint*"
         #"*Microsoft.MicrosoftStickyNotes*"
