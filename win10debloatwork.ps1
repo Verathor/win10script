@@ -2093,65 +2093,84 @@ Function InstallMsftBloat {
 # Uninstall default third party applications
 function UninstallThirdPartyBloat {
 	Write-Output "Uninstalling default third party applications..."
-	Get-AppxPackage -AllUsers "2414FC7A.Viber" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "41038Axilesoft.ACGMediaPlayer" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "46928bounde.EclipseManager" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "4DF9E0F8.Netflix" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "64885BlueEdge.OneCalendar" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "7EE7776C.LinkedInforWindows" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "828B5831.HiddenCityMysteryofShadows" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "89006A2E.AutodeskSketchBook" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "9E2F88E3.Twitter" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "A278AB0D.DisneyMagicKingdoms" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "A278AB0D.MarchofEmpires" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "ActiproSoftwareLLC.562882FEEB491" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AdobeSystemsIncorporated.AdobePhotoshopExpress" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "CAF9E577.Plex" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "D52A8D61.FarmVille2CountryEscape" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "D5EA27B7.Duolingo-LearnLanguagesforFree" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "DB6EA5DB.CyberLinkMediaSuiteEssentials" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "DolbyLaboratories.DolbyAccess" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Drawboard.DrawboardPDF" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Facebook.Facebook" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "flaregamesGmbH.RoyalRevolt2" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "GAMELOFTSA.Asphalt8Airborne" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "KeeperSecurityInc.Keeper" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "king.com.BubbleWitch3Saga" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "king.com.CandyCrushSodaSaga" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "PandoraMediaInc.29680B314EFC2" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "SpotifyAB.SpotifyMusic" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "WinZipComputing.WinZipUniversal" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "XINGAG.XING" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPSystemInformation" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPPCHardwareDiagnosticsWindows" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPPrivacySettings" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPSupportAssistant" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPInc.EnergyStar" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPSystemEventUtility" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPSureShieldAI" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "DB6EA5DB.Power2GoforDell" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "DellInc.DellSupportAssistforPCs" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "DellInc.DellDigitalDelivery" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage "-AllUsers DellInc.DellCommandUpdate" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *booking.com* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "PricelinePartnerNetwork.Booking.comUSABigsavingson" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "5A894077.McAfeeSecurity" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "C27EB4BA.DropboxOEM" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Amazon.com.Amazon" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.MixedReality.Portal" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPInc.EnergyStar_1.2.0.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPPrivacySettings_1.0.38.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPSystemEventUtility_1.1.20.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "AD2F1837.HPSupportAssistant_9.6.714.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "MixedRealityLearning_10.0.18362.449_neutral__cw5n1h2txyewy" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "PricelinePartnerNetwork.Booking.comUSABigsavingson_2.0.2.0_x64__mgae2k3ys4ra0" | Remove-AppxPackage -AllUsers
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage
+	Get-AppxPackage "2414FC7A.Viber" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "41038Axilesoft.ACGMediaPlayer" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "46928bounde.EclipseManager" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "4DF9E0F8.Netflix" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "64885BlueEdge.OneCalendar" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "7EE7776C.LinkedInforWindows" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "828B5831.HiddenCityMysteryofShadows" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "89006A2E.AutodeskSketchBook" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "9E2F88E3.Twitter" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "A278AB0D.DisneyMagicKingdoms" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "A278AB0D.MarchofEmpires" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "ActiproSoftwareLLC.562882FEEB491" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AdobeSystemsIncorporated.AdobePhotoshopExpress" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "CAF9E577.Plex" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "D52A8D61.FarmVille2CountryEscape" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "D5EA27B7.Duolingo-LearnLanguagesforFree" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "DB6EA5DB.CyberLinkMediaSuiteEssentials" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "DolbyLaboratories.DolbyAccess" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "Drawboard.DrawboardPDF" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "Facebook.Facebook" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "flaregamesGmbH.RoyalRevolt2" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "GAMELOFTSA.Asphalt8Airborne" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "KeeperSecurityInc.Keeper" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "king.com.BubbleWitch3Saga" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "PandoraMediaInc.29680B314EFC2" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "SpotifyAB.SpotifyMusic" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "WinZipComputing.WinZipUniversal" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "XINGAG.XING" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPSystemInformation" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPPCHardwareDiagnosticsWindows" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPPrivacySettings" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPJumpStarts" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPSupportAssistant" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPInc.EnergyStar" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPSystemEventUtility" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPSureShieldAI" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "DB6EA5DB.Power2GoforDell" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "DellInc.DellSupportAssistforPCs" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "DellInc.DellDigitalDelivery" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "DellInc.DellCommandUpdate" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage *booking.com* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "PricelinePartnerNetwork.Booking.comUSABigsavingson" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "5A894077.McAfeeSecurity" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "C27EB4BA.DropboxOEM" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "Amazon.com.Amazon" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "Microsoft.MixedReality.Portal" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPInc.EnergyStar_1.2.0.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPPrivacySettings_1.0.38.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPSystemEventUtility_1.1.20.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "AD2F1837.HPSupportAssistant_9.6.714.0_x64__v10z8vjag6ke6" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "MixedRealityLearning_10.0.18362.449_neutral__cw5n1h2txyewy" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage "PricelinePartnerNetwork.Booking.comUSABigsavingson_2.0.2.0_x64__mgae2k3ys4ra0" | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage "" | Remove-AppxPackage
+	#Get-AppxPackage "" | Remove-AppxPackage
+	Get-AppxPackage | Where-Object -Property Name -Match -Value 'HP Documentation' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
 
+
+
+	echo Removing Microsoft non-Packaged bloatware
+	start "" "C:\Program Files\HP\Documentation\Doc_Uninstall.cmd"
+	timeout /t 5
+	#msiexec.exe /X {69ABD67D-5C2E-4724-B519-695DEF3EC23B} /qn /norestart
 
 
 
@@ -2301,7 +2320,7 @@ Function InstallWorkFolders {
 # Install Linux Subsystem - Applicable to 1607 or newer
 Function InstallLinuxSubsystem {
 	Write-Output "Installing Linux Subsystem..."
-	If ([System.Environment]::OSVersion.Version.Build -eq 14393) {
+	If ([System.Environmen]::OSVersion.Version.Build -eq 14393) {
 		# 1607 needs developer mode to be enabled
 		Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" -Name "AllowDevelopmentWithoutDevLicense" -Type DWord -Value 1
 		Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" -Name "AllowAllTrustedApps" -Type DWord -Value 1
@@ -2576,7 +2595,7 @@ Function DisableAudio {
 #
 
 Function UnpinStartMenuTiles {
-	requires -RunAsAdministrator
+	#Requires -RunAsAdministrator
 
 $START_MENU_LAYOUT = @"
 <LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
