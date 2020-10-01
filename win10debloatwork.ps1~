@@ -2170,7 +2170,7 @@ function UninstallThirdPartyBloat {
 	echo Removing Microsoft non-Packaged bloatware
 	start "" "C:\Program Files\HP\Documentation\Doc_Uninstall.cmd"
 	timeout /t 5
-	msiexec.exe /X {69ABD67D-5C2E-4724-B519-695DEF3EC23B} /qn /norestart
+	#msiexec.exe /X {69ABD67D-5C2E-4724-B519-695DEF3EC23B} /qn /norestart
 
 
 

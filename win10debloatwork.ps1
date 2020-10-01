@@ -2168,9 +2168,27 @@ function UninstallThirdPartyBloat {
 
 
 	echo Removing Microsoft non-Packaged bloatware
-	start "" "C:\Program Files\HP\Documentation\Doc_Uninstall.cmd"
-	timeout /t 5
-	#msiexec.exe /X {69ABD67D-5C2E-4724-B519-695DEF3EC23B} /qn /norestart
+	CMD /C "C:\Program Files\HP\Documentation\Doc_Uninstall.cmd
+	
+	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Notifications"}
+	$MyApp.Uninstall()
+	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Click"}
+	$MyApp.Uninstall()
+	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Connection Optimizer"}
+	$MyApp.Uninstall()
+	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Recover"}
+	$MyApp.Uninstall()
+	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Run"}
+	$MyApp.Uninstall()
+	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Client Security Manager"}
+	$MyApp.Uninstall()
+
+
+
+
+
+
+
 
 
 
