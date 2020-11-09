@@ -2151,9 +2151,9 @@ function UninstallThirdPartyBloat {
 	#Get-AppxPackage "" | Remove-AppxPackage
 	#Get-AppxPackage "" | Remove-AppxPackage
 	Get-AppxPackage | Where-Object -Property Name -Match -Value 'HP Documentation' | Remove-AppxPackage
-	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
-	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
-	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
+	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Command' | Remove-AppxPackage
+	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Free Fall Data Protection' | Remove-AppxPackage
+	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Digital Delivery' | Remove-AppxPackage
 	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
 	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
 	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
@@ -2172,22 +2172,22 @@ function UninstallThirdPartyBloat {
 	
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Notifications"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 5
+	Start-Sleep -Seconds 3
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Click"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 5
+	Start-Sleep -Seconds 3
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Connection Optimizer"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 5
+	Start-Sleep -Seconds 3
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Recover"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 5
+	Start-Sleep -Seconds 3
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Run"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 5
+	Start-Sleep -Seconds 3
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Client Security Manager"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 5
+	Start-Sleep -Seconds 3
 
 
 
