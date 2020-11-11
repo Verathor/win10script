@@ -27,7 +27,7 @@
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
-	"CreateRestorePoint",
+	#"CreateRestorePoint",
 	### External Program Setup
 	"InstallVerathorProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	#"InstallAdobe",
