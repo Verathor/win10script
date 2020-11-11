@@ -155,7 +155,7 @@ $tweaks = @(
 	"UninstallMsftBloat",           # "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	#"UninstallWindowsStore",      # "InstallWindowsStore",
-	"DisableXboxFeatures",          # "EnableXboxFeatures",
+	"DisableXboxFeatures"          # "EnableXboxFeatures",
 	#"DisableAdobeFlash",            # "EnableAdobeFlash",
 	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	#"UninstallInternetExplorer",  # "InstallInternetExplorer",
