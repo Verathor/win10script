@@ -105,7 +105,7 @@ $tweaks = @(
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen",   # "ShowShutdownOnLockScreen",
 	"DisableStickyKeys",            # "EnableStickyKeys",
-	"ShowTaskManagerDetails",        # "HideTaskManagerDetails",
+	#"ShowTaskManagerDetails",        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
 	#"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
 	#"HideTaskbarSearch",
@@ -1993,51 +1993,51 @@ Function InstallOneDrive {
 # Uninstall default Microsoft applications
 Function UninstallMsftBloat {
 	Write-Output "Uninstalling default Microsoft applications..."
-	Get-AppxPackage -AllUsers "Microsoft.3DBuilder" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.AppConnector" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.BingFinance" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.BingNews" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.BingSports" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.BingTranslator" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.BingWeather" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.CommsPhone" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.ConnectivityStore" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.GetHelp" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Getstarted" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Messaging" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Microsoft3DViewer" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftPowerBIForWindows" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.MinecraftUWP" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.MSPaint" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.NetworkSpeedTest" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Office.OneNote" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Office.Sway" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.OneConnect" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.People" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Print3D" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.RemoteDesktop" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.SkypeApp" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Wallet" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.WindowsAlarms" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.WindowsCamera" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "microsoft.windowscommunicationsapps" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.WindowsMaps" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.WindowsPhone" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Windows.Photos" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.XboxGameCallableUI" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.Xbox.TCUI" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.XboxSpeechToTextOverlay" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.XboxIdentityProvider" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.XboxGameOverlay" | Remove-AppxPackage -AllUsers
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage -AllUsers
-	#Get-AppxPackage -AllUsers "" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.ZuneMusic" | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers "Microsoft.ZuneVideo" | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.3DBuilder* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.AppConnector* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.BingFinance* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.BingNews* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.BingSports* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.BingTranslator* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.CommsPhone* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.ConnectivityStore* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.GetHelp* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Getstarted* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.MicrosoftPowerBIForWindows* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.MinecraftUWP* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.MSPaint* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.NetworkSpeedTest* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Office.Sway* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.OneConnect* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.People* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Print3D* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.RemoteDesktop* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Wallet* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.WindowsMaps* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.WindowsPhone* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Windows.Photos* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.XboxGameCallableUI* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers ** | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers ** | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.ZuneMusic* | Remove-AppxPackage -AllUsers
+	Get-AppxPackage -AllUsers *Microsoft.ZuneVideo* | Remove-AppxPackage -AllUsers
 
 }
 
