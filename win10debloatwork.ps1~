@@ -2148,8 +2148,8 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "AD2F1837.HPSupportAssistant_9.6.714.0_x64__v10z8vjag6ke6" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "MixedRealityLearning_10.0.18362.449_neutral__cw5n1h2txyewy" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "PricelinePartnerNetwork.Booking.comUSABigsavingson_2.0.2.0_x64__mgae2k3ys4ra0" -allusers | Remove-AppxPackage -AllUsers
-	#Get-AppxPackage "" -allusers | Remove-AppxPackage
-	#Get-AppxPackage "" -allusers | Remove-AppxPackage
+	Get-AppxPackage "*dellsupport*" -allusers | Remove-AppxPackage -Allusers
+	Get-AppxPackage "*hpsupport*" -allusers | Remove-AppxPackage -Allusers
 	Get-AppxPackage | Where-Object -Property Name -Match -Value 'HP Documentation' | Remove-AppxPackage -allusers
 	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Command' | Remove-AppxPackage -allusers
 	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Free Fall Data Protection' | Remove-AppxPackage -allusers
@@ -2172,22 +2172,22 @@ function UninstallThirdPartyBloat {
 	
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Notifications"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 1
+	#Start-Sleep -Seconds 1
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Click"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 1
+	#Start-Sleep -Seconds 1
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Connection Optimizer"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 1
+	#Start-Sleep -Seconds 1
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Recover"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 1
+	#Start-Sleep -Seconds 1
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Sure Run"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 1
+	#Start-Sleep -Seconds 1
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Client Security Manager"}
 	$MyApp.Uninstall()
-	Start-Sleep -Seconds 1
+	#Start-Sleep -Seconds 1 
 
 
 
