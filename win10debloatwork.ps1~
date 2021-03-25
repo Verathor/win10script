@@ -2168,7 +2168,7 @@ function UninstallThirdPartyBloat {
 
 
 	echo Removing Microsoft non-Packaged bloatware
-	CMD /C "C:\Program Files\HP\Documentation\Doc_Uninstall.cmd"
+	CMD /C "'C:\Program Files\HP\Documentation\Doc_Uninstall.cmd'"
 	
 	$MyApp = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "HP Notifications"}
 	$MyApp.Uninstall()
