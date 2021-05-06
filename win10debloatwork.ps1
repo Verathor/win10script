@@ -150,12 +150,13 @@ $tweaks = @(
 	# "DisableThumbsDB",              # "EnableThumbsDB",
 
 	### Application Tweaks ###
+	"DisableXboxFeatures",          # "EnableXboxFeatures",
 	#"DisableOneDrive",              # "EnableOneDrive",
 	#"UninstallOneDrive",            # "InstallOneDrive",
 	"UninstallMsftBloat",           # "InstallMsftBloat",
-	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
+	"UninstallThirdPartyBloat"     # "InstallThirdPartyBloat",
 	#"UninstallWindowsStore",      # "InstallWindowsStore",
-	"DisableXboxFeatures"          # "EnableXboxFeatures",
+
 	#"DisableAdobeFlash",            # "EnableAdobeFlash",
 	#"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	#"UninstallInternetExplorer",  # "InstallInternetExplorer",
