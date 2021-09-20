@@ -2023,7 +2023,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Wallet* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.WindowsMaps* | Remove-AppxPackage -AllUsers
