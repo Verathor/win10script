@@ -22,7 +22,7 @@
 #
 ##############################################################################################################################################################################################
 # Default preset
-
+$ErrorActionPreference = "SilentlyContinue"
 
 $tweaks = @(
 	### Require administrator privileges ###
@@ -2869,7 +2869,7 @@ Function DebloatAll {
 
 
 
-# Normalize path to preset file
+# Normalize path to preset files
 $preset = ""
 $PSCommandArgs = $args
 If ($args -And $args[0].ToLower() -eq "-preset") {
