@@ -34,6 +34,7 @@ $tweaks = @(
 	#"Install7Zip",
 	#"InstallNotepadplusplus",
 	#"InstallMediaPlayerClassic",
+	"Install-Winget",
 
 	### Windows Apps
 	"DebloatAll",
@@ -236,7 +237,23 @@ Function InstallNotepadplusplus {
 	choco install mpc-hc -y
 }
 
+Function Install-Winget (
+	Write-Host "Checking winget..."
 
+# Check if winget is installed
+if (Test-Path ~\AppData\Local\Microsoft\WindowsApps\winget.exe) {
+    Write-output 'Winget Already Installed'
+} else {
+    # Installing winget from the Microsoft Store
+	Write-Output "Winget not found, installing it now."
+    $ResultText.text = "`r`n" +"`r`n" + "Installing Winget... Please Wait"
+	Start-Process "ms-appinstaller:?source=https://aka.ms/getwinget"
+	$nid = (Get-Process AppInstaller).Id
+	Wait-Process -Id $nid
+	Write-Output Winget Installed
+    $ResultText.text = "`r`n" +"`r`n" + "Winget Installed - Ready for Next Task"
+}
+)
 
 
 
@@ -2207,7 +2224,7 @@ function UninstallThirdPartyBloat {
 
 
 
-	DISM /Online /Remove-ProvisionedAppxPackage /PackageName:AD2F1837.HPJumpStarts_1.5.1296.0_neutral_~_v10z8vjag6ke6
+	#DISM /Online /Remove-ProvisionedAppxPackage /PackageName:AD2F1837.HPJumpStarts_1.5.1296.0_neutral_~_v10z8vjag6ke6
 }
 
 # Install default third party applications
