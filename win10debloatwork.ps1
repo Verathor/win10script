@@ -60,9 +60,7 @@ $tweaks = @(
 	#"InstallNotepadplusplus",
 	#"InstallMediaPlayerClassic",
 
-	### Windows Apps
-	"DebloatAll",
-
+	
 	### Privacy Tweaks ###
 	"DisableTelemetry",                   #"EnableTelemetry",
 	"DisableSmartScreen",                 #"EnableSmartScreen",
@@ -81,7 +79,7 @@ $tweaks = @(
 	"DisableWAPPush",                     #"EnableWAPPush",
 	#"DisableWiFiSense",                  #"EnableWiFiSense",
 	#"DisableActivityHistory",            #"EnableActivityHistory",
-
+	
 	### Security Tweaks ###
 	"DisableNetDevicesAutoInst",          #"EnableNetDevicesAutoInst",
 	"DisableDefender",                    #"EnableDefender",
@@ -102,7 +100,7 @@ $tweaks = @(
 	#"DisableScriptHost",                 #"EnableScriptHost",
 	#"EnableDotNetStrongCrypto",          #"DisableDotNetStrongCrypto",
 	#"SetCurrentNetworkPrivate",          #"SetCurrentNetworkPublic",
-
+	
 	### Service Tweaks ###
 	"DisableUpdateMSRT",          	#"EnableUpdateMSRT",
 	"DisableUpdateRestart",      	#"EnableUpdateRestart",
@@ -122,7 +120,7 @@ $tweaks = @(
 	#"DisableUpdateDriver",      	#"EnableUpdateDriver",
 	#"DisableRemoteAssistance",  	#"EnableRemoteAssistance",
 	#"DisableFastStartup",			#"EnableFastStartup",
-
+	
 	### UI Tweaks ###
 	"EnableNumlock",				 #"DisableNumlock",
 	"DisableStickyKeys",			 #"EnableStickyKeys",
@@ -173,7 +171,10 @@ $tweaks = @(
 	#"HideVideosFromExplorer",    	 #"ShowVideosInExplorer",
 	#"DisableThumbnails",            #"EnableThumbnails",
 	#"DisableThumbsDB",              #"EnableThumbsDB",
-
+	
+	### Windows Apps
+	"DebloatAll",
+	
 	### Application Tweaks ###
 	"DisableXboxFeatures",           #"EnableXboxFeatures",
 	"UninstallMsftBloat",            #"InstallMsftBloat",
@@ -181,7 +182,7 @@ $tweaks = @(
 	#"DisableOneDrive",              #"EnableOneDrive",
 	#"UninstallOneDrive",            #"InstallOneDrive",
 	#"UninstallWindowsStore",        #"InstallWindowsStore",
-
+	
 	#"DisableAdobeFlash",            #"EnableAdobeFlash",
 	#"InstallMediaPlayer", 			 #"UninstallMediaPlayer",
 	#"UninstallInternetExplorer",    #"InstallInternetExplorer",
