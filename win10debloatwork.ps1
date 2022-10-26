@@ -23,7 +23,7 @@
 ##############################################################################################################################################################################################
 # Default preset
 $ErrorActionPreference = "SilentlyContinue"
-
+thisisatest
 $createrestorepoint? = Read-Host "Would you like to take a restore point? [Y/n]"
 
 switch($createrestorepoint?){
@@ -269,14 +269,9 @@ Function Install-Winget {
 if (Test-Path ~\AppData\Local\Microsoft\WindowsApps\winget.exe) {
     Write-output 'Winget Already Installed'
 } else {
-    # Installing winget from the Microsoft Store
-	Write-Output "Winget not found, installing it now."
-    $ResultText.text = "`r`n" +"`r`n" + "Installing Winget... Please Wait"
-	Start-Process "ms-appinstaller:?source=https://aka.ms/getwinget"
-	$nid = (Get-Process AppInstaller).Id
-	Wait-Process -Id $nid
-	Write-Output Winget Installed
-    $ResultText.text = "`r`n" +"`r`n" + "Winget Installed - Ready for Next Task"
+	set-PSRepository -name 'PSGallery' -InstallationPolicy Trusted
+	Install-Script -Name winget-install -force
+	winget-install.ps1
 }
 }
 
