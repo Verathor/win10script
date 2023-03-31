@@ -4,7 +4,7 @@
 # Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
 # Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
 # Secondary Tweaked Source: https://github.com/ChrisTitusTech/windows-10-scripts
-#
+#test
 #    Note from author: Never run scripts without reading them & understanding what they do.
 #
 #	Addition: One command to rule them all, One command to find it, and One command to Run it! 
