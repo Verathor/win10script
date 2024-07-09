@@ -2045,23 +2045,23 @@ Function UninstallMsftBloat {
 	Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.CommsPhone* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.ConnectivityStore* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.GetHelp* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.GetHelp* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Getstarted* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.MicrosoftPowerBIForWindows* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.MicrosoftPowerBIForWindows* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.MinecraftUWP* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.MSPaint* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.NetworkSpeedTest* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Office.Sway* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.OneConnect* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.People* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.People* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Print3D* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.RemoteDesktop* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.RemoteDesktop* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Wallet* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms* | Remove-AppxPackage -AllUsers
@@ -2070,8 +2070,8 @@ Function UninstallMsftBloat {
 	Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.WindowsMaps* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.WindowsPhone* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.Windows.Photos* | Remove-AppxPackage -AllUsers
-	Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.Windows.Photos* | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.XboxGameCallableUI* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI* | Remove-AppxPackage -AllUsers
 	Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage -AllUsers
@@ -2174,9 +2174,9 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "AD2F1837.HPSystemEventUtility" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "AD2F1837.HPSureShieldAI" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "DB6EA5DB.Power2GoforDell" -allusers | Remove-AppxPackage -AllUsers
-	Get-AppxPackage "DellInc.DellSupportAssistforPCs" -allusers | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage "DellInc.DellSupportAssistforPCs" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "DellInc.DellDigitalDelivery" -allusers | Remove-AppxPackage -AllUsers
-	Get-AppxPackage "DellInc.DellCommandUpdate" -allusers | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage "DellInc.DellCommandUpdate" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage *booking.com* -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "PricelinePartnerNetwork.Booking.comUSABigsavingson" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "5A894077.McAfeeSecurity" -allusers | Remove-AppxPackage -AllUsers
@@ -2188,13 +2188,13 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "AD2F1837.HPJumpStarts_1.7.1464.0_x64__v10z8vjag6ke6" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "AD2F1837.HPSystemEventUtility_1.1.20.0_x64__v10z8vjag6ke6" -allusers | Remove-AppxPackage -AllUsers
-	Get-AppxPackage "AD2F1837.HPSupportAssistant_9.6.714.0_x64__v10z8vjag6ke6" -allusers | Remove-AppxPackage -AllUsers
+	#Get-AppxPackage "AD2F1837.HPSupportAssistant_9.6.714.0_x64__v10z8vjag6ke6" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "MixedRealityLearning_10.0.18362.449_neutral__cw5n1h2txyewy" -allusers | Remove-AppxPackage -AllUsers
 	Get-AppxPackage "PricelinePartnerNetwork.Booking.comUSABigsavingson_2.0.2.0_x64__mgae2k3ys4ra0" -allusers | Remove-AppxPackage -AllUsers
-	Get-AppxPackage "*dellsupport*" -allusers | Remove-AppxPackage -Allusers
-	Get-AppxPackage "*hpsupport*" -allusers | Remove-AppxPackage -Allusers
+	#Get-AppxPackage "*dellsupport*" -allusers | Remove-AppxPackage -Allusers
+	#Get-AppxPackage "*hpsupport*" -allusers | Remove-AppxPackage -Allusers
 	Get-AppxPackage | Where-Object -Property Name -Match -Value 'HP Documentation' | Remove-AppxPackage -allusers
-	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Command' | Remove-AppxPackage -allusers
+	#Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Command' | Remove-AppxPackage -allusers
 	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Free Fall Data Protection' | Remove-AppxPackage -allusers
 	Get-AppxPackage | Where-Object -Property Name -Match -Value 'Dell Digital Delivery' | Remove-AppxPackage -allusers
 	#Get-AppxPackage | Where-Object -Property Name -Match -Value '' | Remove-AppxPackage
